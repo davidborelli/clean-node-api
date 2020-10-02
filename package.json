@@ -5,6 +5,7 @@
   "author": "David Borelli <david_borelli@live.com>",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^7.10.0",
     "git-commit-msg-linter": "^3.0.0"
   }
 }
