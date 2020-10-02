@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "David Borelli <david_borelli@live.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:staged": "jest"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "@types/node": "^14.11.2",
