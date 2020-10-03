@@ -5,7 +5,7 @@
   "author": "David Borelli <david_borelli@live.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:staged": "jest --passWithNoTests"
   },
   "devDependencies": {
