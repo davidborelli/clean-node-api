@@ -5,7 +5,8 @@
   "author": "David Borelli <david_borelli@live.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --passWithNoTests --watch",
+    "test": "jest --passWithNoTests",
+    "test:watch": "yarn test -- --watch",
     "test:staged": "jest --passWithNoTests"
   },
   "devDependencies": {

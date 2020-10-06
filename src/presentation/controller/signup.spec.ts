@@ -1,9 +1,14 @@
 import { SignUpController } from './signup'
 import { MissingParrarError } from '../errors/missing-param-error'
 
+const makeSut = (): SignUpController => {
+  const sut = new SignUpController()
+  return sut
+}
+
 describe('SignUp Controller', () => {
   test('Should return 400 if no name provided ', () => {
-    const sut = new SignUpController()
+    const sut = makeSut()
     const httpRequest = {
       body: {
         email: 'any_email@any.com',
@@ -19,7 +24,7 @@ describe('SignUp Controller', () => {
   })
 
   test('Should return 400 if no email provided ', () => {
-    const sut = new SignUpController()
+    const sut = makeSut()
     const httpRequest = {
       body: {
         name: 'any_name',
@@ -35,7 +40,7 @@ describe('SignUp Controller', () => {
   })
 
   test('Should return 400 if no password provided ', () => {
-    const sut = new SignUpController()
+    const sut = makeSut()
     const httpRequest = {
       body: {
         name: 'any_name',
@@ -51,7 +56,7 @@ describe('SignUp Controller', () => {
   })
 
   test('Should return 400 if no passwordConfirmation provided ', () => {
-    const sut = new SignUpController()
+    const sut = makeSut()
     const httpRequest = {
       body: {
         name: 'any_name',
